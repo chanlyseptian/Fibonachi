@@ -18,11 +18,13 @@ public class Main {
             fib[i] = fib[i-1] + fib[i-2];
 
         }
-        System.out.println("Output : ");
+      System.out.println("Output : ");
+        long q = 0;
         for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
-        }
+            q = fib[i] + q;
 
+        }
+        System.out.println(q);
 
     }
 }
